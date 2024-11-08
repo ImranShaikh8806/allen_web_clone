@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  max-width: none;
+  height: auto;
+}
+
+:root {
+  font-family: Plus Jakarta Sans;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #111827;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.allen-logo{
+  height: 60px;
+  width: 95px;
+}
+
+.neetDropdown {
+  position: relative; 
+  padding-top: 20px;
+}
+
+.neetOptions {
+  display: none; /* Hide options by default */
+  position: absolute; /* Position under "Neet" */
+  background-color: #111827; /* Background color */
+  margin-left: 288px;
+  width: 250px;
+  margin-top: -45px;
+ 
+  
+}
+
+.neetDropdown:hover .neetOptions {
+  display: block; /* Show options on hover */
+}
+
+.neetDropdown:hover .neet {
+  background-color: #111827; 
+}
+
+.card{
+  margin-top: -13px;
+}
+
+
+
+
+
+.home{
+  margin-left: 100px;
+}
+
+.mobileBtn{
+    margin-left: 430px;
+    margin-top: -300px;
+    border-width: 3px;
+}
+
+.footer{
+  font-size:14px;
+}
+
+.list li{
+  margin-bottom: 16px;
+}
+
+.list{
+  width: 125px;
+}
+
+.footer h1{
+  margin-bottom: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-container{
+  margin-top: -70px;
+}
+
+.aboutImg{
+  width: 1200px;
+}
+
+
+.hrLine{
+  display: flex;
+  flex-direction: row;
+}
+
+.hrLine::before,.hrLine::after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #374151;
+  margin: auto;
+}
+
+
+
+.scholar{
+  height: 101px;
+}
+
+.test{
+  height: 149px;
+}
+
+.courses{
+  height: 137px;
+}
