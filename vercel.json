@@ -5,23 +5,24 @@
         "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "build"
+          "distDir": "dist"  
         }
       },
       {
-        "src": "backend/index.js",
+        "src": "backend/index.js", 
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
+        "src": "/api/(.*)",  
         "dest": "/backend/$1"
       },
       {
-        "src": "/(.*)",
-        "dest": "/$1"
+        "src": "/(.*)",  
+        "dest": "/dist/$1"  
       }
     ]
   }
+  
   
