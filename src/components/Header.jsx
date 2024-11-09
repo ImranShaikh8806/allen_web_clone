@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';//cross icon from fontawesome 
 import { faBars } from '@fortawesome/free-solid-svg-icons'//list icon from fontawesome
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Header() {
@@ -276,7 +277,7 @@ export default function Header() {
 
         <div className='flex gap-4 '>
             <div className='border-2 bg-blue-700 border-none hover:bg-blue-500 rounded-2xl px-4 py-1  '>
-               ab talk to us
+            <FontAwesomeIcon icon={faPhone} className=''/> talk to us
             </div>
 
           {userName ?(<div>welcome {userName}

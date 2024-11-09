@@ -109,9 +109,12 @@ export default function Signin({ onClose }) {
 
             {error && <div className="text-red-500 text-sm">{error}</div>} {/* General error */}
 
-            <div className="hover:bg-gray-700 text-center rounded-xl p-2 border-2 border-blue-500">
-              <button type="submit" className="text-sm text-white font-bold">Sign In</button>
-            </div>
+            <button
+                type="submit"
+                className="hover:bg-gray-700 text-center rounded-xl p-2 border-2 border-blue-500 text-sm text-white font-bold cursor-pointer"
+              >
+              Sign In
+           </button>
           </form>
 
           <h4 className="hrLine mt-9">or</h4>

@@ -149,15 +149,15 @@ export default function Signup({ onClose }) {
 
                 <p>{error}</p>
 
-                <div className='hover:bg-gray-700 text-center rounded-xl p-2 border-2 border-blue-500'>
-                    <button type='submit' className='text-sm text-white font-bold'>
-                        Submit
-                    </button>
-                </div>
+                <button
+                type="submit"
+                className="hover:bg-gray-700 text-center rounded-xl p-2 border-2 border-blue-500 text-sm text-white font-bold cursor-pointer"
+              >
+              Submit
+           </button>
 
                 <p>{success}</p>
             </form>
-            <button onClick={onClose}>Close</button>
         </div>
     );
 }
