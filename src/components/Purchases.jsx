@@ -8,12 +8,12 @@ export default function Purchases() {
     
     const token = localStorage.getItem("token");
 
-    // Fetch purchases only when the token is available
+    
     const fetchPurchases = async () => {
-        if (!token) return; // Do nothing if no token
+        if (!token) return; 
         
         try {
-            setLoading(true); // Start loading before the request
+            setLoading(true); 
             const response = await axios("http://localhost:3000/user/purchases", {
                 headers: {
                     "token": token
@@ -27,18 +27,18 @@ export default function Purchases() {
             console.error("Error fetching purchases:", error);
             setShowPurchases(false); 
         } finally {
-            setLoading(false); // Stop loading after the request finishes
+            setLoading(false); 
         }
     }
 
     useEffect(() => {
         if (token) {
-            fetchPurchases(); // Fetch purchases when token is available
+            fetchPurchases(); 
         }
-    }, [token]); // Dependency on token ensures this runs when token changes
+    }, [token]); 
 
     if (loading) {
-        return <div>Loading...</div>; // Optionally show a loading state
+        return <div>Loading...</div>; 
     }
 
     return (
