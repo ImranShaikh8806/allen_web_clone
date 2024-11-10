@@ -14,7 +14,7 @@ export default function Purchases() {
         
         try {
             setLoading(true); 
-            const response = await axios("http://localhost:3000/user/purchases", {
+            const response = await axios("https://backend-for-allen-git-main-imrans-projects-b4c3a639.vercel.app/user/purchases", {
                 headers: {
                     "token": token
                 }

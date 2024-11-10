@@ -65,7 +65,7 @@ export default function Signup({ onClose }) {
         setSuccess("");
 
         try {
-            const response = await axios.post("http://localhost:3000/user/signup", userdata);
+            const response = await axios.post("https://backend-for-allen-git-main-imrans-projects-b4c3a639.vercel.app/user/signup", userdata);
             setSuccess("Signup succeeded");
             const { token, username } = response.data;
             localStorage.setItem('token', token);

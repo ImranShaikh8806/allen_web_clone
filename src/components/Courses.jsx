@@ -7,7 +7,7 @@ export default function Courses() {
 
     
     const fetchApi = async () => {
-        const response = await axios("http://localhost:3000/course/preview");
+        const response = await axios("https://backend-for-allen-git-main-imrans-projects-b4c3a639.vercel.app/course/preview");
         setData(response.data.courses);
         console.log(response.data.courses[0]);
         return response.data;
@@ -29,7 +29,7 @@ export default function Courses() {
         try {
            
             const response = await axios.post(
-                "http://localhost:3000/course/purchase", 
+                "https://backend-for-allen-git-main-imrans-projects-b4c3a639.vercel.app/course/purchase", 
                 { courseId }, 
                 { headers: { "token": token } }
                 
